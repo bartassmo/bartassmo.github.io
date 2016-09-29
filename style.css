@@ -1,0 +1,104 @@
+/*--- FONTS ---*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    color: #1a1a1a;
+    background-color: rgba(222,223,224, .4);
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+}
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 34px;
+}
+/*--- HEADER ---*/
+header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    text-align: center;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding-top: 42vh;
+    background-image: url(images/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef;
+}
+.hero button {
+    font-size: 18px;
+}
+/*--- ABOUT ME ---*/
+.hr-line {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.75), transparent);
+    opacity: 0.9;
+    margin-bottom: 60px;
+}
+.about-me {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 800px;
+    text-align: center;
+}
+.about-me-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
+/*--- SKILLS ---*/
+.skills {
+    text-align: center;
+    padding: 0;
+}
+.skills img {
+    max-width: 25%;
+}
+.bootcamp img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+/*--- CONTACT ---*/
+.contact {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0 150px;
+    max-width: 800px;
+}
+.contact a {
+    margin: 35px 10px 0;
+    color: #1a1a1a;
+    border: 2px solid #bbb;
+    font-size: 24px;
+}
+.contact a:hover {
+    transform: scale(1.2);
+}
+/*--- FOOTER ---*/
+footer {
+    max-width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #efefef;
+}
+footer p {
+    margin: 0;
+    font-size: 18px;
+}

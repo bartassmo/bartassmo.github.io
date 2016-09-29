@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bartłomiej Smołucha Portfolio</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+		jQuery(function($){
+			$.scrollTo(0);
+			$('#more').click(function() { $.scrollTo($('.about-me'), 700); });
+		});		
+    </script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <p>Bartłomiej Smołucha</p>
+            <p>Jr Front-End Developer</p>
+            <button id="more" class="btn btn-info">Zobacz więcej</button>
+        </div>
+    </header>
+    <section class="about-me">
+        <h1>O mnie</h1>
+        <hr class="hr-line">
+        <p class="about-me-text">Cześć! Mam na imię Bartek i mieszkam w Krakowie. Pomimo braku doświadczenia poznałem już HTML5, CSS3, JavaScript, jQuery, RWD, Bootstrap, Sass, Git, oraz Grunt. Ciągle uczę się nowych rzeczy, oraz ambitnie dążę do wyznaczonych celów. W wolnych chwilach gram na klawiszach i oglądam angielską Premier League. Aktualnie szukam swojej pierwszej pracy jako front-end developer.</p>
+    </section>
+    <section class="skills">
+        <h1>Umiejętności</h1>
+        <hr class="hr-line">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2>Dobra znajomość</h2>
+                <hr class="hr-line">
+                <img src="images/html.png" alt="HTML">
+                <img src="images/css.png" alt="CSS">
+                <img src="images/rwd.png" alt="RWD">
+                <img src="images/bootstrap.png" alt="Bootstrap">
+                <img src="images/sass.png" alt="Sass">
+                <img src="images/git.png" alt="Git">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2>Podstawowa znajomość</h2>
+                <hr class="hr-line">
+                <img src="images/js.png" alt="JavaScript">
+                <img src="images/jquery.png" alt="jQuery">
+                <img src="images/grunt.png" alt="Grunt">
+                <img src="images/ps.png" alt="Photoshop">
+            </div>
+        </div>
+        <div class="bootcamp">
+            <img src="images/zaswiadczenie.png" alt="Bootcamp">
+        </div>
+    </section>
+    <section class="contact">
+        <h1>Kontakt</h1>
+        <hr class="hr-line">
+        <i class="fa fa-envelope fa-2x" aria-hidden="true">            bartlomiej.smolucha@gmail.com</i><br>
+        <a class="btn" href="https://pl.linkedin.com/in/bartłomiej-smołucha-52115b128" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+        <a class="btn" href="https://github.com/bartassmo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+    </section>
+    <footer>
+            <p>Bartłomiej Smołucha &copy; 2016.</p>
+    </footer>
+</body>
+</html>
