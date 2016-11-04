@@ -31,15 +31,10 @@ header {
 }
 .hero {
     width: 100%;
-    height: 100vh;
-    padding-top: 42vh;
-    background-image: url(images/background1.jpg);
-    background-size: cover;
-    background-position: center;
+    height: 44vh;
+    padding-top: 12vh;
+    background: linear-gradient(to right, rgba(104,123,175,1) 0%,rgba(98,167,204,1) 100%);
     color: #efefef;
-}
-.hero button {
-    font-size: 18px;
 }
 /*--- ABOUT ME ---*/
 .hr-line {
@@ -59,19 +54,48 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     text-align: left;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 }
 /*--- SKILLS ---*/
 .skills {
+    background:  linear-gradient(to right, rgba(93,65,87,1) 0%,rgba(91,106,138,1) 100%);
     text-align: center;
-    padding: 0;
+    padding: 15px 0 0;
 }
-.skills img {
-    max-width: 25%;
+.skills p {
+    font-size: 26px;
+    margin-top: 5px;
+    color: #efefef;
+    text-align: center;
 }
+.one-skill {
+    padding: 10px;
+}
+.one-skill span {
+    font-weight: bold;
+}
+.one-skill img {
+    max-height: 130px;
+    max-width: 130px;
+    float: left;
+}
+.one-skill p {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    float: right;
+}
+.skills h1 {
+    color: #efefef;
+}
+.skills .hr-line {
+    background-image: linear-gradient(to right, rgba(239, 239, 239, 0), rgba(239, 239, 239, 0.75), transparent);
+}
+.skills .container {
+    margin: 0 auto;
+}
+
 .bootcamp img {
     max-width: 100%;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 /*--- CONTACT ---*/
 .contact {
@@ -89,13 +113,20 @@ header {
 .contact a:hover {
     transform: scale(1.2);
 }
+.contact span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+.contact>span>a {
+    border: none;
+}
 /*--- FOOTER ---*/
 footer {
     max-width: 100%;
     height: 75px;
     line-height: 75px;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: rgb(40,40,40);
     color: #efefef;
 }
 footer p {

@@ -6,21 +6,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="jquery.scrollTo.min.js"></script>
-	<script>
-		jQuery(function($){
-			$.scrollTo(0);
-			$('#more').click(function() { $.scrollTo($('.about-me'), 700); });
-		});		
-    </script>
 </head>
 <body>
     <header>
         <div class="hero">
             <p>Bartłomiej Smołucha</p>
             <p>Jr Front-End Developer</p>
-            <button id="more" class="btn btn-info">Zobacz więcej</button>
         </div>
     </header>
     <section class="about-me">
@@ -29,28 +20,59 @@
         <p class="about-me-text">Cześć! Mam na imię Bartek i mieszkam w Krakowie. Pomimo braku doświadczenia poznałem już HTML5, CSS3, JavaScript, jQuery, RWD, Bootstrap, Sass, Git, oraz Grunt. Ciągle uczę się nowych rzeczy, oraz ambitnie dążę do wyznaczonych celów. W wolnych chwilach gram na klawiszach i oglądam angielską Premier League. Aktualnie szukam swojej pierwszej pracy jako front-end developer.</p>
     </section>
     <section class="skills">
-        <h1>Umiejętności</h1>
-        <hr class="hr-line">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <h2>Dobra znajomość</h2>
-                <hr class="hr-line">
-                <img src="images/html.png" alt="HTML">
-                <img src="images/css.png" alt="CSS">
-                <img src="images/rwd.png" alt="RWD">
-                <img src="images/bootstrap.png" alt="Bootstrap">
-                <img src="images/sass.png" alt="Sass">
-                <img src="images/git.png" alt="Git">
+        <div class="container">
+            <h1>Umiejętności</h1>
+            <hr class="hr-line">
+            <div class="row">
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <img src="images/html.png" alt="HTML"> 
+                    <div class="layer">
+						<p><span>HTML</span><br><br>Poziom:<br>Dobry</p>
+					</div>
+                </div>
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>CSS</span><br><br>Poziom:<br>Dobry</p>
+                    <img src="images/css.png" alt="CSS">
+                </div>
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>RWD</span><br><br>Poziom:<br>Średni</p>
+                    <img src="images/rwd.png" alt="RWD">
+                </div>
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>Bootstrap</span><br><br>Poziom:<br>Średni</p>
+                    <img src="images/bootstrap.png" alt="Bootstrap">
+                </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <h2>Podstawowa znajomość</h2>
-                <hr class="hr-line">
-                <img src="images/js.png" alt="JavaScript">
-                <img src="images/jquery.png" alt="jQuery">
-                <img src="images/grunt.png" alt="Grunt">
-                <img src="images/ps.png" alt="Photoshop">
+            <div class="row">
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>Sass</span><br><br>Poziom:<br>Podstawowy</p>
+                    <img src="images/sass.png" alt="Sass">
+                </div>
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>Git</span><br><br>Poziom:<br>Dobry</p>
+                    <img src="images/git.png" alt="Git"> 
+                </div>
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>JavaScript</span><br><br>Poziom:<br>Podstawowy</p>
+                    <img src="images/js.png" alt="JavaScript">
+                </div>
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>jQuery</span><br><br>Poziom:<br>Podstawowy</p>
+                    <img src="images/jquery.png" alt="jQuery">
+                </div>
+            </div>
+            <div class="row">
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>Grunt</span><br><br>Poziom:<br>Podstawowy</p>
+                    <img src="images/grunt.png" alt="Grunt">
+                </div>
+                <div class="one-skill col-md-3 col-sm-3 col-xs-6"> 
+                    <p><span>Photoshop</span><br><br>Poziom:<br>Podstawowy</p>
+                    <img src="images/ps.png" alt="Photoshop"> 
+                </div>
             </div>
         </div>
+        <p>Ciągle podnoszę znajomość poznanych technologii.</p>
         <div class="bootcamp">
             <img src="images/zaswiadczenie.png" alt="Bootcamp">
         </div>
@@ -58,12 +80,12 @@
     <section class="contact">
         <h1>Kontakt</h1>
         <hr class="hr-line">
-        <i class="fa fa-envelope fa-2x" aria-hidden="true">            bartlomiej.smolucha@gmail.com</i><br>
+        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> <span><a href="mailto:bartlomiej.smolucha@gmail.com?subject=Odpowiedź">bartlomiej.smolucha@gmail.com</a></span><br>
         <a class="btn" href="https://pl.linkedin.com/in/bartłomiej-smołucha-52115b128" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
         <a class="btn" href="https://github.com/bartassmo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
     </section>
     <footer>
-            <p>Bartłomiej Smołucha &copy; 2016.</p>
+            <p>Bartłomiej Smołucha &copy; 2016</p>
     </footer>
 </body>
 </html>
