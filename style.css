@@ -61,6 +61,12 @@ header {
     text-align: center;
     padding: 15px 0 0;
 }
+.second {
+    margin-top: 20px;
+}
+.third {
+    margin-top: 20px;
+}
 .skills p {
     font-size: 26px;
     margin-top: 5px;
