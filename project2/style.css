@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    background-color: #5C4E4C;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*--- NAV ---*/
+nav {
+    background-color: #2A201F;
+    height: 76px;
+}
+nav img {
+    padding: 11px;
+}
+nav>div:after,
+nav>div:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav>.container>ul {
+    line-height: 75px;
+    float: right;
+}
+nav>.container>ul>li {
+    display: inline-block;
+
+}
+nav>.container>ul>li>a {
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff; 
+    font-family: 'Patrick Hand', cursive;
+}
+nav>.container>ul>li>a:hover {
+        background-color: #5C4E4C;
+    }
+@media (min-width: 768px) and (max-width: 1199px) {
+    nav>.container>ul {
+        margin-right: 50px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    nav {
+        text-align: center;
+        height: 200px;
+    }
+    nav img {
+        width: 200px;
+        margin-top: 0px;
+    }
+    nav>.container>ul {
+        float: none;
+        line-height: 40px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    nav>.container>ul>li {
+        display: block;
+    }
+}
+/*--- JUMBOTRON ---*/
+.jumbotron {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(https://static.pexels.com/photos/5124/hands-music-musician-piano-large.jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.jumbotron h1 {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: calc(50% - 80px);
+    font: 500 1.6em "Quicksland";
+    color: #fff;
+    padding: 10px 200px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .jumbotron h1 {
+        font-size: 1.4em;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .jumbotron h1{
+        font-size: 1.2em;
+        padding: 20px;
+        top: calc(50% - 60px);
+    }
+}
+/*--- GALLERY ---*/
+.gallery:before,
+.gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.gallery {
+    margin: 50px 0;
+}
+.gallery .photo {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+.photo:last-of-type {
+    margin-right: 0;
+}
+.photo img {
+    width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .gallery .container {
+        margin: 0 0 0 40px;
+    }
+    .gallery .photo {
+        margin-right: 3%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .gallery .photo{
+        float: none;
+        padding: 0 10px;
+        margin: 10px auto;
+        text-align: center;
+        width: 50%;
+    }
+}
+/*--- MAPS ---*/
+.img-maps {
+    margin: 50px 0;
+    background: url(http://maps.googleapis.com/maps/api/staticmap?center=Łęki+Górne,+PL&zoom=11&scale=2&size=500x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:small%7Ccolor:0xff8040%7Clabel:%7CŁęki+Górne,+PL) center/cover no-repeat;
+    height: 500px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .img-maps {
+        height: 350px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .img-maps {
+        height: 250px;
+    }
+}
+/*--- FOOTER ---*/
+footer {
+    background-color: #2A201F;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 0.8em;
+    height: 70px;
+    line-height: 70px;
+}

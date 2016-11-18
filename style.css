@@ -104,6 +104,17 @@ header {
 .skills .container {
     margin: 0 auto;
 }
+.card {
+    max-width: 400px;
+    max-height: 500px;
+    background-color: inherit;
+    color: white;
+    float: left;
+    margin: 0 75px;
+}
+.card a {
+    background-color: rgba(26,26,26, .9);
+}
 
 .bootcamp img {
     max-width: 100%;
