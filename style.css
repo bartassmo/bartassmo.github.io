@@ -110,7 +110,7 @@ header {
     background-color: inherit;
     color: white;
     float: left;
-    margin: 0 75px;
+    margin: 0 75px 5px;
 }
 .card a {
     background-color: rgba(26,26,26, .9);
