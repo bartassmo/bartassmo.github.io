@@ -111,14 +111,13 @@ header {
     color: white;
     float: left;
     margin: 0 75px 10px;
+    padding-bottom: 5px;
 }
 .card a {
     background-color: rgba(26,26,26, .9);
 }
-
-.bootcamp img {
-    max-width: 100%;
-    padding: 25px 0;
+.card .card-block a{
+    border: none;
 }
 /*--- CONTACT ---*/
 .contact {

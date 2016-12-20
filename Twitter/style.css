@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans|Raleway|Roboto';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #55ACEE;
+    color: rgba(255,255,255, .8);
+}
+header {
+    padding: 75px;
+    font-size: 20px;
+}
+.box {
+    height: 200px;
+    }
+.quote {
+    padding: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+}
+.author {
+    padding-top: 10px;
+    font-size: 24px;
+}
+.trigger {
+    margin-top: 15px;
+    width: 300px;
+    background-color: inherit; 
+    border: solid 1px;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+.twitter {
+    margin: 15px auto;
+    width: 300px;
+    background-color: inherit; 
+    border: solid 1px;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
