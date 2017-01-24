@@ -1,0 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Sans';
+}
+header {
+    height: 50vh;
+    background: url(https://static.pexels.com/photos/21014/pexels-photo-large.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 175px;
+}
+h1 {
+    color: #131415;
+    font-size: 36px;
+    padding: 10px;
+}
+button {
+    width: 125px;
+    margin-left: 20px;
+    height: 25px;
+    border: 1px solid inherit;
+    border-radius: 5px;
+    background-color: #678765;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+input {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: inherit;
+}
+button, input {
+    margin-top: 5px;
+}
+input:focus {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+section {
+    text-align: center;
+    background-color: rgba(124, 129, 107, .75);
+    height: 50vh;
+}
+h2 {
+    padding: 10px 0;
+    font-size: 28px;
+}
+ul li {
+    padding-top: 5px;
+    font-size: 20px;
+}
