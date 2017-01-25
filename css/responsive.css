@@ -1,0 +1,76 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-content h1 {
+        font-size: 60px;
+    }
+    #jssor_1 {
+        max-width: 100%;   
+    }
+    .contact-info p {
+        font-size: 14px;
+    }
+    .contact-info:nth-child(4) p {
+        margin-left: -20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-content h1 {
+        font-size: 50px;
+    }
+    .about-image img {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    #jssor_1 {
+        max-width: 100%;   
+    }
+    .contact-info p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .contact-info:nth-child(4) {
+        padding-left: 0;
+        margin-left: -15px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .home-content h1 {
+        font-size: 40px;
+    }
+    #jssor_1 {
+        max-width: 100%;   
+    }
+    div.contact-info {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .contact-info:nth-child(4) p {
+        font-size: 18px;
+    }
+    form #submit {
+        margin-top: 5px;
+    }
+}
+@media (max-width: 479px) {
+    .home-content h1 {
+        font-size: 30px;
+    }
+    .about-text h2 {
+        margin-top: 15px;
+    }
+    .about-text p {
+        font-size: 13px;
+    }
+    #jssor_1 {
+        max-width: 100%;
+    }
+    div.contact-info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact-info p {
+        font-size: 16px;
+    }
+    .contact-info:nth-child(4) {
+        margin-bottom: 25px;
+    }
+}
