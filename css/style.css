@@ -274,7 +274,7 @@ section h3.section-subheading {
 }
 /* --- CONTACT --- */
 #contact {
-    height: 700px;
+    min-height: 700px;
 }
 #contact h2.section-heading {
     margin-top: 45px;
