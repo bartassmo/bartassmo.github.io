@@ -73,7 +73,7 @@ $('.responsive').on('click', function (e) {
     
      $(function(){
       $(".element").typed({
-        strings: ["Bartłomiej", "Front-End Developer"],
+        strings: ["Bartłomiej", "Front-End Developerem"],
         typeSpeed: 10,
         loop:true,
         backDelay: 2000

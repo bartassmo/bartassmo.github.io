@@ -126,12 +126,10 @@ nav ul li a:hover {
     line-height: 30px;
 }
 .about-text {
-    display: table;
-    height: 407px;
+    display: block;
 }
 .out {
-    display: table-cell;
-    vertical-align: middle;
+
 }
 .gray-filter {
     filter: grayscale(100%);
