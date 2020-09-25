@@ -30,6 +30,7 @@ function getPlugins(_isProduction) {
                 './templates/*.php',
                 './css/*.scss',
                 './img/*.*',
+                './js/*.js',
             ],
             proxy: 'local.portfolio',
             notify: false,
