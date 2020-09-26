@@ -1,27 +1,28 @@
-var tweetLink = "https://twitter.com/intent/tweet?text=";
-var quoteUrl = "http://api.forismatic.com/api/1.0/?method=getQuote&key=867576&format=jsonp&lang=en&jsonp=?";
+var tweetLink = 'https://twitter.com/intent/tweet?text=';
+var quoteUrl =
+    'https://api.forismatic.com/api/1.0/?method=getQuote&key=867576&format=jsonp&lang=en&jsonp=?';
 
 function getQuote() {
     $.getJSON(quoteUrl, createTweet);
 }
 function createTweet(input) {
-    if(!input.quoteAuthor.length) {
-        input.quoteAuthor = "Unknown author";
+    if (!input.quoteAuthor.length) {
+        input.quoteAuthor = 'Unknown author';
     }
-    var tweetText = "Quote of the day - " + input.quoteText + " Author: " + input.quoteAuthor;
+    var tweetText = 'Quote of the day - ' + input.quoteText + ' Author: ' + input.quoteAuthor;
     if (tweetText.length > 140) {
         getQuote();
     } else {
         var tweet = tweetLink + tweetText;
         encodeURIComponent(tweetText);
         $('.quote').text(input.quoteText);
-        $('.author').text("Author: " + input.quoteAuthor);
+        $('.author').text('Author: ' + input.quoteAuthor);
         $('.tweet').attr('href', tweet);
     }
 }
-$(document).ready(function() {
+$(document).ready(function () {
     getQuote();
-    $('.trigger').on('click', function() {
+    $('.trigger').on('click', function () {
         getQuote();
     });
 });
