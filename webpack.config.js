@@ -73,7 +73,7 @@ module.exports = function (env) {
     console.log('production = ', env.production);
 
     return {
-        entry: './js/app.js',
+        entry: './js/main.js',
         output: {
             path: __dirname + '/dist/',
             filename: 'js/main.js',

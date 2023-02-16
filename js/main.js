@@ -25,7 +25,7 @@ $(document).ready(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr('href'));
             if (
-                refElement.position().top - 90 <= scrollPos &&
+                refElement.position().top - $('.nav').height() <= scrollPos &&
                 refElement.position().top + refElement.height() > scrollPos
             ) {
                 $('nav ul li a').removeClass('active');
@@ -51,16 +51,6 @@ $(document).ready(function () {
         $('.nav-menu').slideToggle();
     });
 
-    function centerInit() {
-        var hometext = $('.home');
-
-        hometext.css({
-            height: $(window).height() + 'px',
-        });
-    }
-    centerInit();
-    $(window).resize(centerInit);
-
     $(function () {
         $('.element').typed({
             strings: ['Bartłomiej', 'Front-End Developerem'],
@@ -76,7 +66,7 @@ $(document).ready(function ($) {
         $AutoPlay: true,
         $Idle: 0,
         $AutoPlaySteps: 4,
-        $SlideDuration: 2500,
+        $SlideDuration: 1000,
         $SlideEasing: $Jease$.$Linear,
         $PauseOnHover: 4,
         $SlideWidth: 200,
